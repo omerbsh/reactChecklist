@@ -1,0 +1,15 @@
+.subcategoryItem {
+  padding: 15px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  background-color: var(--color-white);
+}
+
+.subcategoryItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.dragging {
+  background-color: var(--primary-light);
+  color: var(--color-primary-contrast-text);
+}

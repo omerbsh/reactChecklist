@@ -1,0 +1,65 @@
+.categoryCard {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-light3);
+  cursor: pointer;
+}
+
+.isDraggingOver {
+  background-color: var(--color-success-main);
+}
+
+.header {
+  border-bottom: 1px solid var(--color-light3);
+  padding: 10px 0px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-gray0);
+}
+
+.categoryCard:hover,
+.categoryCard.active {
+  border-color: var(--color-gray2);
+}
+
+.categoryCard:hover .header,
+.categoryCard.active .header {
+  color: var(--color-gray3);
+  border-color: var(--color-gray2);
+}
+
+.content {
+  padding: 20px 10px;
+}
+
+.selectedItem {
+  padding: 15px;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  background-color: var(--primary-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selectedItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.removeButton {
+  border: none;
+  outline: none;
+  background-color: var(--color-error-main);
+  color: var(--color-white);
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 100px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

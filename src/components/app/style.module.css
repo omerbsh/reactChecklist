@@ -1,0 +1,57 @@
+.screenCenter {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loaderBox svg {
+  fill: var(--primary-main);
+}
+
+.blockUi {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.modal {
+  max-width: 500px;
+  margin: 0px auto;
+  position: absolute;
+  inset: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+}
+
+.ModalHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ModalHeader span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.ModalHeader button {
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.ModalBody {
+  padding: 20px 0px;
+}

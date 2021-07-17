@@ -1,0 +1,84 @@
+body {
+  padding: 40px 0px;
+}
+
+/* Contains sidebar and content */
+.main {
+  border: var(--border-1);
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+}
+
+/* Contains header and main content, main content is scrollable */
+.sidebar {
+  height: 100%;
+  overflow-y: hidden;
+  width: 270px;
+  flex-basis: 270px;
+  border-right: var(--border-1);
+}
+
+.sidebarHeader {
+  height: 50px;
+  border-bottom: var(--border-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.sidebarMain {
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  padding: 20px 10px;
+}
+
+/* Contains header, footer and main content, main content is scrollable */
+.content {
+  height: 100%;
+  overflow-y: hidden;
+  width: calc(100% - 270px);
+  flex-basis: calc(100% - 270px);
+}
+
+.contentHeader {
+  height: 50px;
+  border-bottom: var(--border-1);
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  justify-content: flex-end;
+}
+
+.contentFooter {
+  height: 50px;
+  border-top: var(--border-1);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 20px;
+}
+
+.contentMain {
+  height: calc(100% - 100px);
+  overflow-y: auto;
+  padding: 30px 20px;
+}
+
+.myMasonryGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -20px; /* gutter size offset */
+  width: auto;
+}
+.myMasonryGridColumn {
+  padding-left: 20px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.myMasonryGridColumn > button {
+  margin-bottom: 20px;
+}
